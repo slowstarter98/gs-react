@@ -1,38 +1,130 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #58666e;
+  background-color: #f0f3f4;
+  -webkit-font-smoothing: antialiased;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 10px 5px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  margin: 12px 0 12px 25px;
+  font-size: 48px;
+  float: left;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header > div {
+  width: 190.42px;
+  height: 100%;
+}
+nav {
+  margin-left: 80px;
+  position: relative;
+  height: 100%;
+  width: 653.5px;
+  margin-right: 25px;
+  background-color: #fff;
+}
+ul {
+  float: right;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  position: fixed;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 84px;
+  z-index: 2000;
+  background-color: #fff;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(0, 0, 0, 0.05);
+}
+header > h2 {
+  padding: 0px 0px 0px 48px;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-items > li {
+  display: inline-block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-items > li > a {
+  line-height: 84px;
+  padding: 0 10px;
+  color: rgba(0, 0, 0, 0.4);
+  margin: 0 60px 0 0;
+}
+.nav-items > li > a:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+#logo {
+  color: inherit;
+}
+
+#wrap {
+  display: table;
+  width: 100%;
+  margin-top: 120px;
+  margin-bottom: 60px;
+  /* wrap에 들어가는 component의 크기가  100vh - 252px 이하인 경우 */
+  /* 메뉴 누를때 마다 notice랑 board 페이지에서 스크롤 없는거 킹받아서 1 뺌 */
+  min-height: calc(100vh - 251px);
+  /* wrap에 들어있는 component 의 크기가 100vh-252px 이상일 경우 */
+  height: 100%;
+}
+footer {
+  position: absolute;
+  height: 72px;
+  width: 100%;
+  padding: 0 30px;
+  line-height: 20px;
+  color: #8a8c8f;
+  border-top: 1px solid #dee5e7;
+  background-color: #f2f2f2;
+}
+
+/* sectiontitle 기존 색 , 마우스 올렸을때 색 */
+.sectionTitle {
+  color: rgba(0, 0, 0, 0.6);
+}
+.sectionTitle:hover {
+  color: rgba(0, 0, 0, 0.9);
+}
+/* Simple Reset CSS */
+
+aside {
+  /* for fixed side bar */
+  position: fixed;
+  top: 84px;
+  bottom: 0px;
+  left: 0px;
+  width: 20vw;
+  min-width: 192px;
+  padding-top: 50px;
+  background-color: #58666e;
+}
+
+aside > h1 {
+  padding: 20px 20px 20px 20px;
+  color: #fff;
 }
