@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet";
-import "./index.css";
+import "./guidline.css";
 
 function GuidlinePage() {
   return (

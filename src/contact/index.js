@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet";
-import "./index.css";
+import "./contact.css";
 
 function ContactPage() {
   return (

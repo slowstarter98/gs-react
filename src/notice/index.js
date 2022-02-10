@@ -1,4 +1,4 @@
-import "./index.css";
+import "./notice.css";
 import { Helmet } from "react-helmet";
 
 function NoticePage() {

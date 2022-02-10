@@ -1,4 +1,4 @@
-import "./index.css";
+import "./home.css";
 import { Helmet } from "react-helmet";
 function HomeComponent() {
   return (
