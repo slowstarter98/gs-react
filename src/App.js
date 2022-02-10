@@ -75,7 +75,7 @@ function App() {
         <p>Email: ajlab402@gmail.com</p>
       </footer>
 
-      <aside id="aside">
+      <aside>
         <h1> 사이드 메뉴</h1>
       </aside>
     </div>
