@@ -64,6 +64,7 @@ header > h2 {
 }
 #log-in {
   margin: 0;
+  width: 51px;
 }
 
 .nav-items > li > a {
