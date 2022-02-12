@@ -6,10 +6,18 @@ import NoticePage from "./notice/index";
 import GuidlinePage from "./guidline/index";
 import ContactPage from "./contact/index";
 import BoardPage from "./Board/index";
+import { Helmet } from "react-helmet";
+import LoginComponent from "./log-in/index";
 
 function App() {
   return (
     <div>
+      <Helmet>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta httpEquiv="X-UA-Compatible" content="ie=edge"></meta>
+      </Helmet>
+
       <header>
         <div>
           <a href="/" id="logo">
@@ -32,6 +40,11 @@ function App() {
             </li>
             <li>
               <a href="/contact">Contact</a>
+            </li>
+            <li>
+              <a href="/login">
+                <h3 id="log-in">log-in</h3>
+              </a>
             </li>
           </ul>
         </nav>
@@ -62,6 +75,11 @@ function App() {
           {/* Contact 화면 */}
           <Route exact={true} path={"/contact"}>
             <ContactPage />
+          </Route>
+
+          {/* log-in 화면 */}
+          <Route exact={true} path={"/login"}>
+            <LoginComponent />
           </Route>
         </Switch>
       </div>
